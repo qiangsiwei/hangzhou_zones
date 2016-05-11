@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+body, html{width: 100%;height: 100%;overflow: hidden;margin:0;}
+#l-map {width: 100%;height: 100%;overflow: hidden;margin:0;}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=hIlimGuvEfHV41Aw885gONzB"></script>
+<title>麻点图</title>
+</head>
+<body>
+    <div id="l-map"></div>
+</body>
+</html>
+<script type="text/javascript">
+// 百度地图API功能
+var map = new BMap.Map("l-map");                   // 创建地图实例
+var point = new BMap.Point(120.2,30.2);            // 创建点坐标
+map.centerAndZoom(point, 11);                      // 初始化地图，设置中心点坐标和地图级别
+map.enableScrollWheelZoom();
+map.addControl(new BMap.NavigationControl());
+map.addControl(new BMap.ScaleControl()); 
+
+var myStyleJson=[
+          {
+                    "featureType": "background",
+                    "elementType": "all",
+                    "stylers": {
+                              "lightness": 50,
+                              "saturation": -50
+                    }
+          },
+          {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#eeeeee"
+                    }
+          }
+]
+map.setMapStyle({styleJson: myStyleJson });  
+
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.16),new BMap.Point(120.04, 30.34),new BMap.Point(120.24, 30.34),new BMap.Point(120.24, 30.16),new BMap.Point(120.04, 30.16)], {strokeColor:"black", strokeWeight:1, strokeOpacity:1}));
+
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04,30.16),new BMap.Point(120.04,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.044,30.16),new BMap.Point(120.044,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.048,30.16),new BMap.Point(120.048,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.052,30.16),new BMap.Point(120.052,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.056,30.16),new BMap.Point(120.056,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.06,30.16),new BMap.Point(120.06,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.064,30.16),new BMap.Point(120.064,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.068,30.16),new BMap.Point(120.068,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.072,30.16),new BMap.Point(120.072,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.076,30.16),new BMap.Point(120.076,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.08,30.16),new BMap.Point(120.08,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.084,30.16),new BMap.Point(120.084,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.088,30.16),new BMap.Point(120.088,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.092,30.16),new BMap.Point(120.092,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.096,30.16),new BMap.Point(120.096,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.1,30.16),new BMap.Point(120.1,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.104,30.16),new BMap.Point(120.104,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.108,30.16),new BMap.Point(120.108,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.112,30.16),new BMap.Point(120.112,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.116,30.16),new BMap.Point(120.116,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.12,30.16),new BMap.Point(120.12,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.124,30.16),new BMap.Point(120.124,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.128,30.16),new BMap.Point(120.128,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.132,30.16),new BMap.Point(120.132,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.136,30.16),new BMap.Point(120.136,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.14,30.16),new BMap.Point(120.14,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.144,30.16),new BMap.Point(120.144,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.148,30.16),new BMap.Point(120.148,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.152,30.16),new BMap.Point(120.152,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.156,30.16),new BMap.Point(120.156,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.16,30.16),new BMap.Point(120.16,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.164,30.16),new BMap.Point(120.164,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.168,30.16),new BMap.Point(120.168,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.172,30.16),new BMap.Point(120.172,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.176,30.16),new BMap.Point(120.176,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.18,30.16),new BMap.Point(120.18,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.184,30.16),new BMap.Point(120.184,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.188,30.16),new BMap.Point(120.188,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.192,30.16),new BMap.Point(120.192,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.196,30.16),new BMap.Point(120.196,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.2,30.16),new BMap.Point(120.2,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.204,30.16),new BMap.Point(120.204,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.208,30.16),new BMap.Point(120.208,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.212,30.16),new BMap.Point(120.212,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.216,30.16),new BMap.Point(120.216,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.22,30.16),new BMap.Point(120.22,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.224,30.16),new BMap.Point(120.224,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.228,30.16),new BMap.Point(120.228,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.232,30.16),new BMap.Point(120.232,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.236,30.16),new BMap.Point(120.236,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.24,30.16),new BMap.Point(120.24,30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.16),new BMap.Point(120.24, 30.16)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1636),new BMap.Point(120.24, 30.1636)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1672),new BMap.Point(120.24, 30.1672)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1708),new BMap.Point(120.24, 30.1708)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1744),new BMap.Point(120.24, 30.1744)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.178),new BMap.Point(120.24, 30.178)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1816),new BMap.Point(120.24, 30.1816)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1852),new BMap.Point(120.24, 30.1852)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1888),new BMap.Point(120.24, 30.1888)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1924),new BMap.Point(120.24, 30.1924)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.196),new BMap.Point(120.24, 30.196)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.1996),new BMap.Point(120.24, 30.1996)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2032),new BMap.Point(120.24, 30.2032)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2068),new BMap.Point(120.24, 30.2068)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2104),new BMap.Point(120.24, 30.2104)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.214),new BMap.Point(120.24, 30.214)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2176),new BMap.Point(120.24, 30.2176)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2212),new BMap.Point(120.24, 30.2212)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2248),new BMap.Point(120.24, 30.2248)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2284),new BMap.Point(120.24, 30.2284)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.232),new BMap.Point(120.24, 30.232)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2356),new BMap.Point(120.24, 30.2356)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2392),new BMap.Point(120.24, 30.2392)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2428),new BMap.Point(120.24, 30.2428)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2464),new BMap.Point(120.24, 30.2464)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.25),new BMap.Point(120.24, 30.25)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2536),new BMap.Point(120.24, 30.2536)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2572),new BMap.Point(120.24, 30.2572)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2608),new BMap.Point(120.24, 30.2608)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2644),new BMap.Point(120.24, 30.2644)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.268),new BMap.Point(120.24, 30.268)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2716),new BMap.Point(120.24, 30.2716)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2752),new BMap.Point(120.24, 30.2752)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2788),new BMap.Point(120.24, 30.2788)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2824),new BMap.Point(120.24, 30.2824)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.286),new BMap.Point(120.24, 30.286)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2896),new BMap.Point(120.24, 30.2896)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2932),new BMap.Point(120.24, 30.2932)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.2968),new BMap.Point(120.24, 30.2968)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3004),new BMap.Point(120.24, 30.3004)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.304),new BMap.Point(120.24, 30.304)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3076),new BMap.Point(120.24, 30.3076)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3112),new BMap.Point(120.24, 30.3112)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3148),new BMap.Point(120.24, 30.3148)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3184),new BMap.Point(120.24, 30.3184)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.322),new BMap.Point(120.24, 30.322)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3256),new BMap.Point(120.24, 30.3256)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3292),new BMap.Point(120.24, 30.3292)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3328),new BMap.Point(120.24, 30.3328)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.3364),new BMap.Point(120.24, 30.3364)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+map.addOverlay(new BMap.Polyline([new BMap.Point(120.04, 30.34),new BMap.Point(120.24, 30.34)], {strokeColor:"red", strokeWeight:1, strokeOpacity:0.25}));
+
+</script>
+</body>
+</html>
